@@ -9,10 +9,7 @@ const BlogListItem = ({ id, blogtitle, blogcontent, image, categories }) => {
       <div className="card border-secondary mb-3">
         <div className="card-header">{category}</div>
         <div className="card-body">
-          <img
-            width="100%"
-            src={`http://localhost:1337${image[0].formats.medium.url}`}
-          />
+          <img width="100%" src={image[0].formats.medium.url} />
           <h4 className="card-title">{blogtitle}</h4>
         </div>
       </div>

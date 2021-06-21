@@ -9,7 +9,7 @@ class Bloglist extends React.Component {
     };
   }
   componentWillMount() {
-    fetch("http://localhost:1337/blogs")
+    fetch("https://strapilakshy.herokuapp.com/blogs")
       .then((res) => {
         if (res.status >= 400) {
           throw new Error("Bad response from the server");
